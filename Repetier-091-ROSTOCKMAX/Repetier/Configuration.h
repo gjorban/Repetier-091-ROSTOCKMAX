@@ -73,7 +73,7 @@ To override EEPROM settings with config settings, set EEPROM_MODE 0
 // PiBot for Repetier V1.4    = 315
 // Sanguish Beta              = 501
 
-#define MOTHERBOARD 301
+#define MOTHERBOARD 33
 
 #include "pins.h"
 
@@ -534,9 +534,9 @@ Value is used for all generic tables created. */
 // set to 0 if you don't have a heated bed
 #define HEATED_BED_SENSOR_TYPE 98
 /** Analog pin of analog sensor to read temperature of heated bed.  */
-#define HEATED_BED_SENSOR_PIN TEMP_BED_PIN
+#define HEATED_BED_SENSOR_PIN TEMP_1_PIN
 /** \brief Pin to enable heater for bed. */
-#define HEATED_BED_HEATER_PIN HEATER_BED_PIN
+#define HEATED_BED_HEATER_PIN HEATER_1_PIN
 // How often the temperature of the heated bed is set (msec)
 #define HEATED_BED_SET_INTERVAL 5000
 
@@ -1153,7 +1153,7 @@ The following settings override uiconfig.h!
 13 = SeeMeCNC Display on Rambo (ORION)
 
 */
-#define FEATURE_CONTROLLER 13
+#define FEATURE_CONTROLLER 2
 
 /**
 Select the language to use.
